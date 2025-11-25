@@ -21,3 +21,11 @@ spec:
         image: kuldeepsharmaks1/notes-app-k8s
         ports:
           - containerPort: 8000
+        livenessProbe:
+          httpGet:
+            path: /
+            port: 8000
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 8000
