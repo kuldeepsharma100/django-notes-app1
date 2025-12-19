@@ -16,6 +16,8 @@ spec:
       labels:
         app: notes-app
     spec:
+      imagePullSecrets:
+      - name: ecr-secret
       containers:
       - name: notes-app
         image: 288418345987.dkr.ecr.us-east-1.amazonaws.com/django-notes-app:IMAGE_TAG
