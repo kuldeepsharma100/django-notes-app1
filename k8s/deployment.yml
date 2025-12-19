@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: notes-app
-        image: kuldeepsharmaks1/notes-app-k8s
+        image: 288418345987.dkr.ecr.us-east-1.amazonaws.com/django-notes-app:IMAGE_TAG
         ports:
           - containerPort: 8000
         livenessProbe:
